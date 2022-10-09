@@ -1,0 +1,68 @@
+.top-new-section {
+    .left-title-card {
+        font-size: 17px;
+        @media screen and (max-width: 900px) {
+            font-size: 13px;
+        }
+        font-weight: 600;
+        white-space: normal;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .MuiPaper-root {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .card-right {
+
+        &:first-child {
+            button {
+                padding: 0 0 18px 0;
+                border-top: none;
+
+            }
+            .MuiCardContent-root{
+                padding: 10px 0 ;
+            }
+        }
+
+        button {
+            padding: 18px 0;
+            border-top: 1px dashed #e5e5e5;
+
+        }
+
+        .right-img {
+            border-radius: 4px;
+            @media screen and (max-width: 900px) {
+               &:nth-child(n+2){
+                width: 100px!important;
+               }
+            }
+        }
+
+        .right-title {
+            white-space: normal;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            font-size: 14px;
+            @media screen and (max-width: 900px) {
+                font-size: 11px;
+            }
+            overflow: hidden;
+            font-weight: 600;
+
+        }
+
+        .MuiCardContent-root {
+           
+            padding: 0 0 0 10px;
+            align-self: start;
+        }
+    }
+}
