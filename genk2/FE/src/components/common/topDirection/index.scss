@@ -1,0 +1,13 @@
+.TopD_container{
+    background: #2E2E2E;
+    height: 25px;
+    align-items: center;
+    a{
+        color : #A2A2A2;
+        font-size: 12px;
+        font-weight: 600;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
