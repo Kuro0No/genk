@@ -1,0 +1,77 @@
+@import "../../../styles/variables";
+
+.header-wrapper {
+  height: 80px;
+  align-items: center;
+  flex-direction: unset !important;
+
+  position: sticky !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  z-index: 10000;
+
+  .header-wrapper-child {
+    background: #222222 !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-ic {
+    cursor: pointer;
+  }
+
+  .toolBar {
+
+    // display: flex;
+    .item-menu {
+      color: white;
+      padding: 0px 10px;
+      font-family: SFD-Medium;
+      font-size: 15px;
+
+      @media screen and (max-width:800px) {
+        display: none;
+      }
+    }
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .item-right {
+    position: relative;
+
+    input {
+      position: absolute;
+      left: -300%;
+      top: -20px;
+      height: 25px;
+      border-radius: 4px;
+      width: 0;
+      transition: ease .2s;
+      padding: 0;
+      border: none;
+    }
+
+    .show {
+      transition: ease .2s;
+      width: 250px;
+    }
+
+    a {
+      color: white;
+      padding: 0px 10px;
+      font-family: SFD-Medium;
+      font-size: 15px;
+    }
+
+    .MuiSvgIcon-root {
+      width: 25px;
+    }
+
+  }
+
+}
